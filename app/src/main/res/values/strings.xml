@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">SampleKotlinAndroidExtensions</string>
+    <string name="hello_world">ハローワールド！</string>
+    <string name="show_fragment_activity">FragmentActivityを表示</string>
 </resources>
