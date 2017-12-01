@@ -1,5 +1,6 @@
 package sample.samplekotlinandroidextensions
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
@@ -16,6 +17,9 @@ class SampleFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_sample, container, false)
         view.helloFragmentButton.setOnClickListener {
             view.helloFragmentTextView.text = "ハロー フラグメント"
+        }
+        view.showSampleListActivity.setOnClickListener {
+            this.startActivity(Intent(this.context, SampleListActivity::class.java))
         }
         return view
     }
