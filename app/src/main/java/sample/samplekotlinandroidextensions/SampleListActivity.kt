@@ -12,7 +12,8 @@ class SampleListActivity : AppCompatActivity() {
         setContentView(R.layout.activity_sample_list)
 
         this.sampleRecyclerView.layoutManager = LinearLayoutManager(this)
-        this.sampleRecyclerView.adapter = SampleRecyclerViewAdapter(
-                itemDataList = listOf("Sample1", "Sample2", "Sample3"))
+        this.sampleRecyclerView.adapter = SampleRecyclerViewAdapter(itemDataList = (1..100).map {
+            "Sample$it"
+        })
     }
 }
